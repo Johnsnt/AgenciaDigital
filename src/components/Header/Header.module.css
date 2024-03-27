@@ -1,0 +1,81 @@
+#header {
+  width: 100%;
+  height: 10vh;
+}
+
+.logo_box {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+/* Logo container */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-left: 3rem;
+  
+}
+
+.logo img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.logo h1 {
+  font-size: 3rem;
+}
+
+.logo h1 span {
+  color: var(--cyan);
+}
+
+
+
+
+#toggle {
+  appearance: none;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 3rem;
+  background-color: var(--paragraphWhite);
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  right: 5rem;
+  transition: all 0.5s ease-in;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Fazendo uma troca de ponto dentro do botão de alternância */
+#toggle::before {
+  content: "";
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 0.3rem;
+  transform: translateY(-50%);
+  transition: all 0.5s ease-in;
+}
+
+
+/* Alterando o plano de fundo do botão de alternância quando marcado*/
+#toggle:checked {
+  background: var(--white);
+}
+
+/* Alterando a cor do interruptor de ponto e movendo-se para o lado direito quando marcado*/
+#toggle:checked::before {
+  background: var(--cyan);
+  left: 32px;
+}
+
+/* Alterar o plano de fundo e a cor da fonte quando marcado */
+#toggle:checked~.container {
+  background-color: var(--black);
+  color: var(--white);
+}

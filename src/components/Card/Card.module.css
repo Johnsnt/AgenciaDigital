@@ -1,0 +1,49 @@
+.card {
+    width: calc(100% / 4);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border-radius: 0.8rem;
+    padding: 5rem 4rem;
+    position: relative;
+    transition: all 0.4s;
+}
+
+.card::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    border-top: 0.5rem solid var(--cyan);
+}
+
+.card:hover {
+    --paragraphWhite: var(--white);
+    --black: var(--white);
+    background-color: var(--darkblue);
+    transform: translateY(-1rem);
+}
+
+.card h3 {
+    font-weight: 700;
+    color: var(--black);
+    font-size: 2.2rem;
+    margin: 0.5rem 0;
+}
+
+.card p {
+    font-size: 1.6rem;
+    color: var(--paragraphWhite);
+}
+
+.card p:last-of-type {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+
+

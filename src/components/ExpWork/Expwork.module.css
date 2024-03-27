@@ -1,0 +1,44 @@
+#section {
+    width: 100%;
+    height: auto;
+    padding-bottom: 8rem;
+    background-color: var(--gray);
+}
+.box_title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.box_title p {
+    font-size: 1.6rem;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+    color: var(--paragraphWhite);
+}
+
+.box_title h3 {
+    font-size: 3.3rem;
+    color: var(--black);
+    padding: 8rem 0 3rem 0;
+}
+
+.box_title h3::after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 0.5rem;
+    border-bottom: 0.5rem solid var(--cyan);
+    margin: 1rem auto 1rem auto;
+
+}
+
+
+.box_card {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    gap: 2rem;
+    justify-content: center;
+    
+}
