@@ -1,0 +1,102 @@
+@mixin flexCenterLeft($dir, $wra, $jcon, $aitm) {
+    display: flex;
+    flex-direction: $dir;
+    flex-wrap: $wra;
+    justify-content: $jcon;
+    align-items: $aitm;
+}
+
+
+#section {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.info_box {
+    width: 50%;
+    height: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+.info_box_text {
+    @include flexCenterLeft(column, wrap, center, flex-start);
+    color: var(--black);
+    padding-left: 3rem;
+    width: 50%;
+    height: 100%;
+
+    h3 {
+        position: relative;
+        font-size: 3.4rem;
+        width: 60%;
+        // text-align: center;
+    }
+
+    span {
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    p {
+        width: 60%;
+        font-size: 1.8rem;
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (max-width:876px) {
+
+    .info_box {
+        display: none;
+        width: 0;
+    }
+    
+    .info_box_text {
+        width: 100%;
+        span,
+        p,
+        h3 { 
+            width: 100%;
+            text-align: center;
+            padding: 0 4rem;
+        }
+    }
+
+}
+
+
+@media screen and (max-width:375px) {
+    .info_box_text {
+        padding: 0;
+
+        
+        h3 { 
+            font-size: 2.9rem;
+        }
+
+        span {
+            font-size: 1.7rem;
+        }
+
+        p {
+            font-size: 1.7rem;
+        }
+    }
+    
+}
+
+
+// Usar depois 

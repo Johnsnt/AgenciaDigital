@@ -1,0 +1,27 @@
+#section {
+    width: 100%;
+    height: auto;
+    padding: 6rem 0;
+    position: relative;
+    background-image: url('/assets/form3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.box_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 2.5rem;
+    height: 100%;
+    color: var(--white);
+}
+
+@import './form'
+

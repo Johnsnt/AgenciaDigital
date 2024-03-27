@@ -1,0 +1,49 @@
+#toggle {
+    appearance: none;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 3rem;
+    background-color: var(--pWhite);
+    position: absolute;
+    top: calc(50% - 1.5rem);
+    right: 5rem;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    background-color: var(--black);
+    z-index: 1;
+
+    &::before {
+        content: "";
+        background-image: url('/assets/moon.png');
+        background-size: cover;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0.5rem;
+        transform: translateY(-50%);
+        transition: all 0.2s ease-in;
+    }
+
+    &:checked {
+        background: #fb4402;
+    }
+
+    &:checked {
+        &::before {
+            background-image: url('/assets/sun.png');
+            background-size: cover;
+            left: 3.3rem;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width:400px) {
+    #toggle {
+        right: 2rem;
+    }
+}
