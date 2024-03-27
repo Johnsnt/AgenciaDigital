@@ -1,56 +1,59 @@
 #section {
-    height: 90vh;
-    display: flex;
-    justify-content: space-between;
-    background-image: url('/assets/bannerEscuro.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+  height: 90vh;
+  width: 100%;
+  background-image: url("/assets/bannerEscuro.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
 }
 
 .box_img {
-    background-image: url('/assets/bannerguy.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -1rem 3rem;
-    width: 50%;
-    height: 100%;
-    z-index: 5;
+  width: 50%;
+  height: 100%;
+  background-image: url("/assets/bannerguy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -1rem 3rem;
+  z-index: 5;
 }
 
 .box_title {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
+  width: 50%;
+  padding-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
 }
 
 .title h2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
-
 .title h2 span {
-    color: var(--cyan)
+  color: var(--cyan);
 }
-
 .title p {
-    max-width: 50rem;
-    font-size: 4rem;
-    font-weight: bold;
-} 
+  max-width: 50rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
 .title p:last-child {
-    margin-top: 0.9rem;
-    font-weight: 400;
-    font-size: 2rem;
+  margin-top: 0.9rem;
+  font-weight: 400;
+  font-size: 2rem;
 }
-
 .title p span {
-    background-color: var(--cyan);
+  background-color: var(--cyan);
 }
 
-@media (max-width:375px) {
-    .box_img {
-        display: none;
-    }
-}
+@media (max-width: 876px) {
+  .box_img {
+    display: none;
+  }
+  .box_title {
+    width: 100%;
+    align-items: flex-start;
+  }
+}/*# sourceMappingURL=Banner.module.css.map */

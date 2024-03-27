@@ -14,7 +14,7 @@ export default function Info() {
                 <p>Nossa missão é criar uma forte presença digital para sua marca, usando
                     estratégias personalizadas, ferramentas e tecnologias inovadoras. Trabalhamos
                     lado a lado com você para definir objetivos claros e implementar soluções que
-                    destaquem seus valores e diferenciais no mercado</p>
+                    destaquem seus valores e diferenciais no mercado.</p>
             </div>
         </section>
     );

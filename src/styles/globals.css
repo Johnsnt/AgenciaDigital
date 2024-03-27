@@ -7,6 +7,10 @@
 
 html {
   font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 :root {
@@ -14,14 +18,12 @@ html {
   --white: #fff;
   --gray: #f0f0f0;
   --black: #333;
-  --paragraphWhite: #666666;
-  --paragraphDark: #c0c0c0;
-  
+  --pWhite: #666666;
+  --pDark: #c0c0c0;
   --darkblue: #12141D;
-
 }
 
 .section-limit {
   max-width: 1440px;
   margin: 0 auto;
-}
+}/*# sourceMappingURL=globals.css.map */

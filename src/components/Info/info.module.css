@@ -1,71 +1,77 @@
 #section {
-    height: 70vh;
-    /* background-color: blue; */
-    display: flex;
-    justify-content: space-between;
-
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
 .info_box {
-    width: 50%;
-    height: 100%;
-    background-color: aquamarine;
+  width: 50%;
+  height: 100%;
 }
-
 .info_box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .info_box_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 4rem;
-    /* background-color: brown; */
-    width: 50%;
-    color: var(--black);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--black);
+  padding-left: 3rem;
+  width: 50%;
+  height: 100%;
 }
-
 .info_box_text h3 {
-    font-size: 3.4rem;
-    max-width: 55rem;
-    position: relative;
-    z-index: 5;
+  position: relative;
+  font-size: 3.4rem;
+  width: 60%;
 }
-
-.info_box_text h3::before {
-    content: "";
-    position: absolute;
-    top: 2.3rem;
-    display: block;
-    /* width: 28rem; */
-    height: 0.7rem;
-    border-bottom: 0.5rem solid var(--cyan);
-    z-index: -2;
-    animation-name: slide;
-    animation-duration: 2s;
-    animation-fill-mode: both;
-}
-
 .info_box_text span {
-    margin-top: 1rem;
-    font-size: 2rem;
-    font-style: italic;
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
 }
-
 .info_box_text p {
-    max-width: 63%;
-    font-size: 1.5rem;
-    margin-top: 1rem;
+  width: 60%;
+  font-size: 1.8rem;
+  margin-top: 2rem;
 }
 
-
-@keyframes slide {
-    from {
-        width: 0;
-    } to {
-        width: 28rem;
-    }
+@media screen and (max-width: 876px) {
+  .info_box {
+    display: none;
+    width: 0;
+  }
+  .info_box_text {
+    width: 100%;
+  }
+  .info_box_text span,
+  .info_box_text p,
+  .info_box_text h3 {
+    width: 100%;
+    text-align: center;
+    padding: 0 4rem;
+  }
 }
+@media screen and (max-width: 375px) {
+  .info_box_text {
+    padding: 0;
+  }
+  .info_box_text h3 {
+    font-size: 2.9rem;
+  }
+  .info_box_text span {
+    font-size: 1.7rem;
+  }
+  .info_box_text p {
+    font-size: 1.7rem;
+  }
+}/*# sourceMappingURL=info.module.css.map */
