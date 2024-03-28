@@ -24,6 +24,28 @@ html {
 }
 
 
+.lightMode {
+  background-color: var(--white);
+
+  #sectionw {
+    background-color: var(--gray);
+
+    .box_title {
+     
+      p {
+        color: var(--pWhite);
+      }
+
+      h3 {
+        color: var(--black);
+      }
+    }
+  }
+
+  
+}
+
+
 .section-limit {
   max-width: 1440px;
   margin: 0 auto;
