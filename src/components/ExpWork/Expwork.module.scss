@@ -3,6 +3,16 @@
     height: auto;
     padding-bottom: 8rem;
     background-color: var(--gray);
+    &dark {
+        @extend #section; 
+        background-color: var(--darkblue);
+        .box_title {
+            h3,
+            p {
+                color: var(--white);
+            }
+        }
+    }
 }
 
 .box_title {

@@ -1,7 +1,16 @@
-#section {
+#section, #sectiondark {
   background-color: var(--white);
   height: 6vh;
   width: 100%;
+}
+#sectiondark {
+  background-color: var(--darkblue);
+}
+#sectiondark p {
+  color: var(--white);
+}
+#sectiondark p span {
+  color: var(--cyan);
 }
 
 .box_content {
@@ -36,7 +45,7 @@
 }
 
 @media screen and (max-width: 520px) {
-  #section {
+  #section, #sectiondark {
     height: auto;
     padding: 2rem 0;
   }

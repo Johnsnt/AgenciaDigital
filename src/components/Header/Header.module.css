@@ -1,7 +1,16 @@
-#header {
+#header, #headerdark {
   width: 100%;
   height: 10vh;
   overflow: hidden;
+}
+#headerdark {
+  background-color: var(--darkblue);
+}
+#headerdark h1 {
+  color: var(--white);
+}
+#headerdark h1 span {
+  color: var(--cyan);
 }
 
 .logo_box {

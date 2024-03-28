@@ -1,8 +1,15 @@
-#section {
+#section, #sectiondark {
   width: 100%;
   height: auto;
   padding-bottom: 8rem;
   background-color: var(--gray);
+}
+#sectiondark {
+  background-color: var(--darkblue);
+}
+#sectiondark .box_title h3,
+#sectiondark .box_title p {
+  color: var(--white);
 }
 
 .box_title {

@@ -2,6 +2,17 @@
     background-color: var(--white);
     height: 6vh;
     width: 100%;
+
+    &dark {
+        @extend #section;
+        background-color: var(--darkblue);
+        p {
+            color: var(--white);
+            span {
+                color: var(--cyan);
+            }
+        }
+    }
 }
 
 .box_content {

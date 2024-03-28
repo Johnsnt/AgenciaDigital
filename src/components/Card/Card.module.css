@@ -1,4 +1,4 @@
-.card {
+.card, .cardDark {
   width: 25%;
   height: auto;
   display: flex;
@@ -9,13 +9,17 @@
   position: relative;
   transition: all 0.4s;
 }
-.card:hover {
-  --pWhite: var(--white);
-  --black: var(--white);
+.card:hover, .cardDark:hover {
   background-color: var(--darkblue);
   transform: translateY(-1rem);
 }
-.card::before {
+.card:hover p, .cardDark:hover p {
+  color: var(--white);
+}
+.card:hover h3, .cardDark:hover h3 {
+  color: var(--white);
+}
+.card::before, .cardDark::before {
   content: "";
   display: block;
   position: absolute;
@@ -25,23 +29,47 @@
   height: 0.5rem;
   border-top: 0.5rem solid var(--cyan);
 }
-.card h3 {
+.card h3, .cardDark h3 {
   font-weight: 700;
   font-size: 2.2rem;
   margin: 0.5rem 0;
   color: var(--black);
 }
-.card p {
+.card p, .cardDark p {
   font-size: 1.6rem;
   color: var(--pWhite);
 }
-.card p:last-of-type {
+.card p:last-of-type, .cardDark p:last-of-type {
   margin-top: 1rem;
   font-size: 1.6rem;
 }
+.cardDark {
+  background-color: var(--darkcard);
+}
+.cardDark p {
+  font-size: 1.6rem;
+  color: var(--pDark);
+}
+.cardDark p:last-of-type {
+  color: var(--white);
+}
+.cardDark h3 {
+  color: var(--white);
+}
+
+.cardDark:hover {
+  background-color: var(--white);
+  transform: translateY(-1rem);
+}
+.cardDark:hover p {
+  color: var(--pWhite);
+}
+.cardDark:hover h3 {
+  color: var(--black);
+}
 
 @media screen and (max-width: 876px) {
-  .card {
+  .card, .cardDark {
     width: 100%;
     margin: 1rem 3rem;
   }

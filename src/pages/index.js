@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import styles from "@/styles/Home.module.css";
-
+import React, { useState } from "react";
 import Header from '@/components/Header';
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
@@ -10,6 +8,12 @@ import Info from "@/components/Info";
 import Form from "@/components/Form";
 
 export default function Home() {
+  const [theme, setTheme] = useState(false);
+
+  const handleChangeTheme = () => {
+    setTheme(!theme);
+    console.log(theme)
+  };
   return (
     <>
       <Head>
@@ -21,14 +25,14 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
         <link rel="icon" href="/assets/logo.png" />
       </Head>
-      <Header />
+      <Header theme={theme} changeTheme={handleChangeTheme} />
       <main>
         <Banner />
         <Info />
-        <ExpWork />
+        <ExpWork theme={theme} />
         <Form />
       </main>
-      <Footer />
+      <Footer theme={theme} />
 
     </>
   );
