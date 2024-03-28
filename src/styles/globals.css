@@ -23,6 +23,19 @@ html {
   --darkblue: #12141D;
 }
 
+.lightMode {
+  background-color: var(--white);
+}
+.lightMode #sectionw {
+  background-color: var(--gray);
+}
+.lightMode #sectionw .box_title p {
+  color: var(--pWhite);
+}
+.lightMode #sectionw .box_title h3 {
+  color: var(--black);
+}
+
 .section-limit {
   max-width: 1440px;
   margin: 0 auto;

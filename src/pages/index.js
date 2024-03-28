@@ -8,8 +8,12 @@ import Footer from "@/components/Footer";
 import ExpWork from "@/components/ExpWork";
 import Info from "@/components/Info";
 import Form from "@/components/Form";
+import { useState } from "react";
 
 export default function Home() {
+  const [theme, setTheme] = useState(false)
+
+
   return (
     <>
       <Head>
