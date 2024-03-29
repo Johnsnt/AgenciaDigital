@@ -11,11 +11,7 @@ export default function Header({ theme, changeTheme }) {
                     <Image src="/assets/logo.png" width={100} height={100} alt="logo" />
                     <h1>TWI<span>LIGHT</span></h1>
                 </div>
-
                 <input onClick={changeTheme} type="checkbox" id={style.toggle} />
-
-                <input onClick={changeTheme} type="checkbox" id={style.toggle}/>
-
             </div>
 
         </header>

@@ -18,7 +18,6 @@
             color: var(--white);
         }
         background-color: var(--darkblue);
-        transform: translateY(-1rem);
     }
 
     &::before {
@@ -79,11 +78,10 @@
     h3 {
         color: var(--black);
     }
-    transform: translateY(-1rem);
 }
 
 
-
+@import './observer.scss';
 
 
 @media screen and (max-width:876px) {

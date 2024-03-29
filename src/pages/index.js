@@ -13,7 +13,6 @@ export default function Home() {
 
   const handleChangeTheme = () => {
     setTheme(!theme);
-    console.log(theme)
   };
   return (
     <>

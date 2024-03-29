@@ -26,6 +26,11 @@
     align-items: center;
     justify-content: center;
     color: var(--white);
+    opacity: 0;
+    animation-name: show;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+
 }
 
 .title {
@@ -65,4 +70,17 @@
         width: 100%;
         align-items: flex-start;        
     }
+}
+
+
+@keyframes show {
+    from {
+        transform: translateX(-20rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+    
 }

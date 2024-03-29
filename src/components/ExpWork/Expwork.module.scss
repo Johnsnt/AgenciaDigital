@@ -31,6 +31,7 @@
         font-size: 3.3rem;
         color: var(--black);
         padding: 10rem 3rem 3rem 3rem;
+        opacity: 0;
 
         &::after {
             content: "";
@@ -51,6 +52,10 @@
     padding-bottom: 4rem;
     text-align: left;
 }
+
+
+@import './observer';
+
 
 
 @media screen and (max-width:768px) {
