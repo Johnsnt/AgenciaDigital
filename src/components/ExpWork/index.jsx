@@ -11,14 +11,14 @@ export default function ({ theme }) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setIsVisible(true);
-            observer.unobserve(entry.target); // Pare de observar o elemento após ser visível
+            observer.unobserve(entry.target);
           }
         });
       });
   
       observer.observe(elementRef.current);
   
-      return () => observer.disconnect(); // Desconectar o observador quando o componente é desmontado
+      return () => observer.disconnect(); 
     }, []);
 
 
